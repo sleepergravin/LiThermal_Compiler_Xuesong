@@ -13,6 +13,7 @@ else
 fi
 
 export STAGING_DIR=$ROOTPATH/target
+rm -rf $ROOTPATH/build
 mkdir build
 cd build
 cmake $ROOTPATH/LiThermal -DROOTPATH=$ROOTPATH -DCMAKE_TOOLCHAIN_FILE=$ROOTPATH/LiThermal/toolchain.cmake
